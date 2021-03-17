@@ -3,19 +3,19 @@
 class Bad_root {};  //reports error from root
 
 double root1(double a, double b, double c){
-double x1 = ((-b + (sqrt((b * b)-(4 * a * c))))/(2*a));
-
 
 if (((b * b)-(4 * a * c))<0) throw Bad_root {};  //checks the argument...returns x1 if argument is good
-    return x1; 
+    double x1 = ((-b + (sqrt((b * b)-(4 * a * c))))/(2*a));
+     return x1;
                                 
 }
 
 double root2(double a, double b, double c){
-double x2 = ((-b - (sqrt((b * b)-(4 * a * c))))/(2*a));
 
     if (((b * b)-(4 * a * c))<0) throw Bad_root {}; //returns x2 if the argument is good
+    double x2 = ((-b - (sqrt((b * b)-(4 * a * c))))/(2*a));
     return x2;
+    
 }
 
 
