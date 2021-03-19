@@ -14,8 +14,8 @@ int main()
 	}
 	sort (name_age.begin(), name_age.end());
 
-	for (auto it : name_age) {
-		cout << it.first << " " << it.second << endl;
+	for (auto n : name_age) {
+		cout << n.first << " " << n.second << endl;
 	}
 	
 
